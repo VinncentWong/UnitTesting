@@ -8,4 +8,8 @@ public class BusinessLogic {
         }
         return sum;
     }
+
+    public void getData(){
+        
+    }
 }
