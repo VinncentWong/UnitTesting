@@ -33,4 +33,6 @@ public class TestBusinessLogic {
         assertEquals(expected, service.calculateSumArray(repository.getSomeData()));
     }
 
+    
+
 }
