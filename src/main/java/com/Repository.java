@@ -1,5 +1,5 @@
 package com;
 
-public interface ILogin {
+public interface Repository {
     int[] getSomeData();
 }
