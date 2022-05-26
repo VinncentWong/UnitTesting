@@ -1,5 +1,7 @@
 package com.controller;
 
+import java.util.List;
+
 import com.entity.Item;
 import com.service.ItemService;
 
@@ -19,7 +21,7 @@ public class ItemController {
     }
 
     @GetMapping("/getitemservice")
-    public Item getItemFromService(){
+    public List<Item> getItemFromService(){
         return itemService.getItem();
     }
 }

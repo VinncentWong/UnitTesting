@@ -15,6 +15,9 @@ import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.util.Arrays;
+
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 
@@ -41,7 +44,7 @@ public class ItemControllerTest {
 
     @Test
     public void testGetItemWithService() throws Exception{
-        when(itemService.getItem()).thenReturn(new Item(1L, "Item A", 20));
+        when(itemService.getItem()).thenReturn(Arrays.asList(new Item(1L, "Item A", 20)));
         RequestBuilder request = MockMvcRequestBuilders
                                     .get("/getitemservice")
                                     .accept(MediaType.APPLICATION_JSON);

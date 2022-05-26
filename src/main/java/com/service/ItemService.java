@@ -1,13 +1,20 @@
 package com.service;
 
-import com.entity.Item;
+import java.util.List;
 
+import com.entity.Item;
+import com.repository.ItemRepository;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ItemService {
+
+    @Autowired
+    private ItemRepository itemRepository;
     
-    public Item getItem(){
-        return new Item(1L, "Item A", 20);
+    public List<Item> getItem(){
+        return itemRepository.findAll();
     }
 }
