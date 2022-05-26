@@ -14,8 +14,8 @@ public class TestBusinessLogic {
     @InjectMocks
     private Service service;
 
-    @Mock
-    private Repository repository; 
+    // @Mock
+    // private Repository repository; 
     
     @Test
     public void checkIfCalculateSumIsTrue(){
@@ -26,12 +26,12 @@ public class TestBusinessLogic {
 
     // atau
 
-    @Test
-    public void checkIfCalculateSumIsTrueUsingMock(){
-        when(repository.getSomeData()).thenReturn(new int[] {1,2,3,4,5});
-        int expected = 15;
-        assertEquals(expected, service.calculateSumArray(repository.getSomeData()));
-    }
+    // @Test
+    // public void checkIfCalculateSumIsTrueUsingMock(){
+    //     when(repository.getSomeData()).thenReturn(new int[] {1,2,3,4,5});
+    //     int expected = 15;
+    //     assertEquals(expected, service.calculateSumArray(repository.getSomeData()));
+    // }
 
     
 

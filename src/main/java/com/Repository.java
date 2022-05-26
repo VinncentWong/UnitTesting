@@ -1,5 +1,5 @@
-package com;
+// package com;
 
-public interface Repository {
-    int[] getSomeData();
-}
+// public interface Repository {
+//     int[] getSomeData();
+// }

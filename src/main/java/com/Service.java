@@ -2,7 +2,7 @@ package com;
 
 public class Service {
 
-    private Repository repository;
+    // private Repository repository;
 
     public int calculateSumArray(int[] arrayNumber){
         int sum = 0;
@@ -14,18 +14,18 @@ public class Service {
 
     public int calculateSumArrayUsingRepo(){
         int sum = 0;
-        int[] array = repository.getSomeData();
-        for(int number: array){
-            sum = sum + number;
-        }
+        // int[] array = repository.getSomeData();
+        // for(int number: array){
+        //     sum = sum + number;
+        // }
         return sum;
     }
 
-    public Repository getRepository() {
-        return repository;
-    }
+    // public Repository getRepository() {
+    //     return repository;
+    // }
 
-    public void setRepository(Repository repository) {
-        this.repository = repository;
-    }
+    // public void setRepository(Repository repository) {
+    //     this.repository = repository;
+    // }
 }
